@@ -18,6 +18,8 @@ Logging facilities for applications.
 
 Writes the text starting from the memory address `text_base` with the length `text_len` to the environment-provided logger.
 
+The text must be valid UTF-8 or otherwise the behavior is implementation-defined.
+
 `level` can be one of:
 
 - 1: Error
