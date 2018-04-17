@@ -17,3 +17,7 @@ Any state of the application must not be changed if this error is returned.
 ### PermissionDeniedError: -3
 
 The application is trying to perform an operation that is not allowed by the security policy.
+
+### NotFoundError: -4
+
+The requested resource is not found.
