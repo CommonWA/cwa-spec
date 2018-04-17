@@ -9,14 +9,13 @@ Logging facilities for applications.
 **Parameters:**
 
 - `level`: `i32`
-- `text_base`: `i32`
-- `text_len`: `i32`
+- `text`: `&[u8]`
 
 **Returns:** `none`
 
 **Semantics:**
 
-Writes the text starting from the memory address `text_base` with the length `text_len` to the environment-provided logger.
+Writes `text` to the environment-provided logger.
 
 The text must be valid UTF-8 or otherwise the behavior is implementation-defined.
 
