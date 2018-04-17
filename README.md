@@ -4,6 +4,12 @@ The Common WebAssembly API is a minimal specification of the standard API for no
 
 ## Structure
 
+### Types
+
+A few new types (which all lower to primitive WASM types) are introduced in `types.md`.
+
+### Namespaces
+
 The CWA API is organized as *namespaces*, which each corresponds to a specific set of API functions.
 
 CWA API functions should be accessible via the external module named `cwa`.
