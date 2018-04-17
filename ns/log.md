@@ -1,4 +1,4 @@
-# logging
+# log
 
 Logging facilities for applications.
 
