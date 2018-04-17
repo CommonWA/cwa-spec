@@ -1,18 +1,20 @@
-# Metal
+# Common WebAssembly API
 
-Metal is a minimal specification of the standard API for non-Web WebAssembly usermode environments.
+The Common WebAssembly API is a minimal specification of the standard API for non-Web WebAssembly usermode environments.
 
 ## Structure
 
-The Metal API is organized as *namespaces*, which each corresponds to a specific set of API functions.
+The CWA API is organized as *namespaces*, which each corresponds to a specific set of API functions.
+
+CWA API functions should be accessible via the external module named `cwa`.
 
 Every namespace should contain only lower-case ASCII characters in its name, and have its definitions in `ns/{namespace}.md`.
 
 Every function should contain only lower-case ASCII characters, digits(0-9), and `_` in its name, and the first character cannot be a digit.
 
-Functions from namespaces are visible to WebAssembly modules with the name `__metal_{namespace}_{function}`.
+Functions from namespaces are visible to WebAssembly modules with the name `{namespace}_{function}`.
 
-## Add new features to Metal
+## Add new features to CWA
 
 If you are not sure, open an issue to discuss your idea first.
 
