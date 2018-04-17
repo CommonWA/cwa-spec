@@ -8,6 +8,10 @@ The Common WebAssembly API is a minimal specification of the standard API for no
 
 A few new types (which all lower to primitive WASM types) are introduced in `types.md`.
 
+### Errors
+
+Error handling in CWA is done by error codes, which are defined in `errors.md`.
+
 ### Namespaces
 
 The CWA API is organized as *namespaces*, which each corresponds to a specific set of API functions.
