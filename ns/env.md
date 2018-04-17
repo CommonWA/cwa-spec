@@ -9,7 +9,7 @@ Get configuration information (like database credentials) from the host.
 **Parameters:**
 
 - `key`: `&[u8]`
-- `value`: `&[u8]`
+- `value`: `&mut [u8]`
 
 **Returns:** `i32`
 
@@ -22,6 +22,6 @@ containing the key for the information we want to request.
 will be written.
 
 Returns:
-- `-1` if the key does not exist
+- `NotFoundError` if the key does not exist
 - the number of bytes written to the value buffer if the key exists and the buffer is big enough
 - the needed size for the value buffer if it was not big enough. No data is written, and the caller must check if that return value is larger than `value.len` to reallocate and retry.
