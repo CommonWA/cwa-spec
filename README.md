@@ -24,6 +24,12 @@ Every function should contain only lower-case ASCII characters, digits(0-9), and
 
 Functions from namespaces are visible to WebAssembly modules with the name `{namespace}_{function}`.
 
+### URLs and Schemes
+
+"Everything is a URL".
+
+Defined in `urls-and-schemes.md`.
+
 ## Add new features to CWA
 
 If you are not sure, open an issue to discuss your idea first.
