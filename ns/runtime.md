@@ -47,3 +47,17 @@ Writes the name of the current runtime environment to `out` and returns the numb
 If the length of `out` is less than the length of the name to write, InvalidArgumentError should be returned.
 
 The name must not be longer than 32 bytes and must be valid UTF-8.
+
+### msleep
+
+**Parameters:**
+
+- `ms`: `i32`
+
+**Returns:** `none`
+
+**Semantics:**
+
+Sleeps for the given `ms` milliseconds.
+
+If the environment does not support sleeping, calling this results in a fatal error.
