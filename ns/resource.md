@@ -4,7 +4,23 @@ Operations related to readable/writeable resources.
 
 ## Functions
 
-### resource_read
+### open
+
+**Parameters:**
+
+- `url`: `&[u8]`
+
+**Returns:** `i32`
+
+**Semantics:**
+
+Opens the resource specified by `url`.
+
+Returns the resource id on success, or the error code on failure.
+
+The URL format is as defined in `urls-and-schemes.md`.
+
+### read
 
 **Parameters:**
 
@@ -19,7 +35,7 @@ Reads from the resource specified by `id`, into `data`.
 
 Returns the actual bytes read on success, or the error on failure.
 
-### resource_write
+### write
 
 **Parameters:**
 
@@ -34,7 +50,7 @@ Writes `data` to the resource specified by `id`.
 
 Returns the actual bytes written on success, or the error on failure.
 
-### resource_close
+### close
 
 **Parameters:**
 
