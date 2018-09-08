@@ -14,9 +14,9 @@ A small number of core schemes are defined here and should be implemented by all
 
 | Name | Description | Docs
 | --- | --- | --- |
-| null | The scheme to which all written bytes are discarded and from which nothing are read | (TODO) |
-| zero | The scheme to which all written bytes are discarded and from which a infinite stream of `0` are read | (TODO) |
-| log | Logging | (TODO) |
+| null | The scheme to which all written bytes are discarded and from which nothing are read | [Docs](./scheme/null.md) |
+| zero | The scheme to which all written bytes are discarded and from which a infinite stream of `0` are read | [Docs](./scheme/zero.md) |
+| log | Logging | [Docs](./scheme/log.md) |
 
 For platforms with specific features, the related feature-dependent schemes should be implemented:
 
