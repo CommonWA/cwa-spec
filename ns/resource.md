@@ -63,3 +63,17 @@ Returns the actual bytes written on success, or the error on failure.
 Closes the resource specified by `id`.
 
 Calling this on an invalid resource id is a fatal error.
+
+### flush
+
+**Parameters:**
+
+- `id`: `i32`
+
+**Returns:** `i32`
+
+**Semantics:**
+
+Instructs the resource specified by `id` to flush the output stream, ensuring that all intermediately buffered contents reach their destination.
+
+Returns `0` on success, or the error on failure.
