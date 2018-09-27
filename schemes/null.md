@@ -16,7 +16,7 @@ No data will be read. The call will succeed, but no bytes will be read.
 
 ### [Write](https://github.com/CommonWA/cwa-spec/blob/master/ns/resource.md#write)
 
-No data will be written. The call will succeed, but no bytes will be written.
+All written data is accepted, and discarded. The call will succeed.
 
 ### [Close](https://github.com/CommonWA/cwa-spec/blob/master/ns/resource.md#close)
 
