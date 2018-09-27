@@ -2,7 +2,7 @@
 
 This scheme offers a simple write-only logger. The logging data passed through this scheme can be handled in an implementation-dependent manner.
 
-If provided, `?prefix=` should automatically pretend every log line with a given prefix, followed by a colon, and a space. EG:
+If provided, `?prefix=` should automatically prepend every log line with a given prefix, followed by a colon, and a space. EG:
 
 ```
 const char* furl = "log://?prefix=test";
