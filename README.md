@@ -1,6 +1,12 @@
 # Common WebAssembly API
 
-The Common WebAssembly API is a minimal specification of the standard API for non-Web WebAssembly usermode environments.
+## The project
+
+Common WebAssembly API (CWA) is a minimal specification of a standard API to implement [non-Web WebAssembly](https://webassembly.org/docs/non-web/) in virtualized environments.
+
+## Objectives
+
+<sup>TODO: add how the project's objectives are inspired by WA official doc about "non-Web" WebAssembly ecosystem (with quotations)</sup>
 
 ## Structure
 
